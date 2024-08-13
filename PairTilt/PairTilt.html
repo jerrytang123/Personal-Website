@@ -3,10 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Links Page</title>
+    <title>PairTilt Landing Page</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+            flex-direction: column;
         }
         ul {
             list-style-type: none; /* Removes bullet points */
@@ -22,15 +29,25 @@
         a:hover {
             text-decoration: underline; /* Underline on hover */
         }
+        h2 {
+            margin-top: 40px; /* Adds space above the second title */
+        }
     </style>
 </head>
 <body>
-    <h1>My Links</h1>
-    <ul>
-        <li><a href="https://www.example.com" target="_blank">Example Website</a></li>
-        <li><a href="https://www.google.com" target="_blank">Google</a></li>
-        <li><a href="https://www.wikipedia.org" target="_blank">Wikipedia</a></li>
-        <li><a href="https://www.openai.com" target="_blank">OpenAI</a></li>
-    </ul>
+    <div>
+        <h1>PairTilt</h1>
+        <ul>
+            <li><a href="https://drive.google.com/file/d/1KquOJdNxDapeY_KNXbSWIOr8HX1QiXcO/view?usp=drive_link" target="_blank">Paper</a></li>
+            <li><a href="https://www.youtube.com/watch?v=dCXunBaXyjo" target="_blank">Video of Experiments</a></li>
+        </ul>
+
+        <h2>Connect</h2>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/tang-jerry/" target="_blank">LinkedIn</a></li>
+            <li><a href="mailto:jerrytang@berkeley.edu" target="_blank">Email</a></li>
+            <li><a href="https://hiperlab.berkeley.edu/" target="_blank">HiPeRLab</a></li>
+        </ul>
+    </div>
 </body>
 </html>
