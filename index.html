@@ -72,10 +72,6 @@
             text-align: center;
         }
 
-        .contact-form {
-            margin-top: 30px;
-        }
-
         .footer {
             background-color: #343a40;
             color: #ffffff;
@@ -95,6 +91,13 @@
         .navbar {
             background-color: #f4f4f4 !important; /* Light grey background */
         }
+
+        .section-offset::before {
+            content: "";
+            display: block;
+            height: 60px; /* Adjust this to match your navbar height */
+            margin-top: -60px; /* Matches the height to offset correctly */
+        }
     </style>
 </head>
 
@@ -109,7 +112,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="https://yunhaotang.wixsite.com/home">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://yunhaotang.wixsite.com/home" target="_blank">Portfolio</a></li>
                 <li class="nav-item"><a class="nav-link" href="#connect">Connect</a></li>
                 <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
@@ -121,54 +124,54 @@
         <h1 class="mt-5">Hi, I'm Haoyun (Jerry) Tang</h1>
         <p class="lead">Entrepreneur & Roboticist, PhD in Mechanical Engineering</p>
 
-        <section id="connect">
+        <section id="connect" class="section-offset">
             <h2 class="section-title">Connect</h2>
             <p>Find me on <a href="https://www.linkedin.com/in/tang-jerry/" target="_blank">LinkedIn</a> or <a href="mailto:hyjerrytang@gmail.com">send me an email</a>.</p>
         </section>
 
-        <section id="gallery">
+        <section id="gallery" class="section-offset">
             <h2 class="section-title">Startups Gallery</h2>
             <div class="row justify-content-center">
                 <div class="col-md-2 text-center">
-                    <a href="https://www.emailstartup.com" target="_blank">
-                        <img src="assets/1.png" alt="eMai" class="gallery-icon">
+                    <a href="assets/html/blank.html" target="_blank">
+                        <img src="assets/figures/1.png" alt="eMai" class="gallery-icon">
                     </a>
                     <p class="gallery-subtitle">eMai</p>
                 </div>
                 <div class="col-md-2 text-center">
-                    <a href="https://www.roba-tea.com" target="_blank">
-                        <img src="assets/2.png" alt="RobaTea" class="gallery-icon">
+                    <a href="https://roba-tea.com/" target="_blank">
+                        <img src="assets/figures/2.png" alt="RobaTea" class="gallery-icon">
                     </a>
                     <p class="gallery-subtitle">RobaTea</p>
                 </div>
                 <div class="col-md-2 text-center">
-                    <a href="https://www.tenniestartup.com" target="_blank">
-                        <img src="assets/3.png" alt="Tennie" class="gallery-icon">
+                    <a href="https://www.canva.com/design/DAGThR06FV0/mWjANcvqAO8v0JALo2KdwQ/edit?utm_content=DAGThR06FV0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank">
+                        <img src="assets/figures/3.png" alt="Tennie" class="gallery-icon">
                     </a>
                     <p class="gallery-subtitle">Tennie</p>
                 </div>
                 <div class="col-md-2 text-center">
-                    <a href="https://www.aimbots.com" target="_blank">
-                        <img src="assets/4.png" alt="AimBOTs" class="gallery-icon">
+                    <a href="assets/html/blank.html" target="_blank">
+                        <img src="assets/figures/4.png" alt="AimBOTs" class="gallery-icon">
                     </a>
                     <p class="gallery-subtitle">AimBOTs</p>
                 </div>
             </div>
         </section>
 
-        <section id="research">
+        <section id="research" class="section-offset">
             <h2 class="section-title">Research</h2>
             <div class="row justify-content-center">
                 <div class="col-md-2 text-center">
-                    <a href="PairTilt/PairTilt.html" target="_blank">
-                        <img src="assets/5.png" alt="Research Paper" class="gallery-icon">
+                    <a href="html/PairTilt.html" target="_blank">
+                        <img src="assets/figures/5.png" alt="Research Paper" class="gallery-icon">
                     </a>
                     <p class="gallery-subtitle">IROS 2024</p>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="contact-form">
+        <section id="contact" class="section-offset">
             <h2 class="section-title">Contact Me</h2>
             <form action="mailto:hyjerrytang@gmail.com" method="post" enctype="text/plain">
                 <div class="form-group">
