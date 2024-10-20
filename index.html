@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Haoyun (Jerry) Tang Homepage</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+            color: #343a40;
+            padding-top: 60px;
+        }
+
+        .container {
+            max-width: 800px;
+        }
+
+        .section-title {
+            margin-top: 50px;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: #007bff;
+        }
+
+        a {
+            color: #007bff;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: #0056b3;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        .gallery-icon {
+            width: 100px; /* Adjust size to make the icons smaller */
+            height: auto;
+            margin: 10px auto;
+            display: block; /* Centers the image */
+            transition: transform 0.2s;
+        }
+    
+        .gallery-icon:hover {
+            transform: scale(1.1); /* Slight zoom effect on hover */
+        }
+    
+        .gallery-subtitle {
+            margin-top: 5px;
+            font-size: 14px;
+            color: #343a40;
+            text-align: center;
+        }
+
+        .contact-form {
+            margin-top: 30px;
+        }
+
+        .footer {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .footer a {
+            color: #ffffff;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        
+        .navbar {
+            background-color: #f4f4f4 !important; /* Light grey background */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#">Jerry Tang</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://yunhaotang.wixsite.com/home">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#connect">Connect</a></li>
+                <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container text-center">
+        <h1 class="mt-5">Hi, I'm Haoyun (Jerry) Tang</h1>
+        <p class="lead">Entrepreneur & Roboticist, PhD in Mechanical Engineering</p>
+
+        <section id="connect">
+            <h2 class="section-title">Connect</h2>
+            <p>Find me on <a href="https://www.linkedin.com/in/tang-jerry/" target="_blank">LinkedIn</a> or <a href="mailto:hyjerrytang@gmail.com">send me an email</a>.</p>
+        </section>
+
+        <section id="gallery">
+            <h2 class="section-title">Startups Gallery</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-2 text-center">
+                    <a href="https://www.emailstartup.com" target="_blank">
+                        <img src="assets/1.png" alt="eMai" class="gallery-icon">
+                    </a>
+                    <p class="gallery-subtitle">eMai</p>
+                </div>
+                <div class="col-md-2 text-center">
+                    <a href="https://www.roba-tea.com" target="_blank">
+                        <img src="assets/2.png" alt="RobaTea" class="gallery-icon">
+                    </a>
+                    <p class="gallery-subtitle">RobaTea</p>
+                </div>
+                <div class="col-md-2 text-center">
+                    <a href="https://www.tenniestartup.com" target="_blank">
+                        <img src="assets/3.png" alt="Tennie" class="gallery-icon">
+                    </a>
+                    <p class="gallery-subtitle">Tennie</p>
+                </div>
+                <div class="col-md-2 text-center">
+                    <a href="https://www.aimbots.com" target="_blank">
+                        <img src="assets/4.png" alt="AimBOTs" class="gallery-icon">
+                    </a>
+                    <p class="gallery-subtitle">AimBOTs</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="research">
+            <h2 class="section-title">Research</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-2 text-center">
+                    <a href="PairTilt/PairTilt.html" target="_blank">
+                        <img src="assets/5.png" alt="Research Paper" class="gallery-icon">
+                    </a>
+                    <p class="gallery-subtitle">IROS 2024</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-form">
+            <h2 class="section-title">Contact Me</h2>
+            <form action="mailto:hyjerrytang@gmail.com" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" id="message" name="message" rows="4" placeholder="Message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Haoyun (Jerry) Tang. Designed and developed by Jerry Tang.</p>
+    </footer>
+
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
