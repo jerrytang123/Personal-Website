@@ -91,6 +91,15 @@
         .navbar {
             background-color: #f4f4f4 !important; /* Light grey background */
         }
+        
+        .navbar-toggler-icon {
+            display: none; /* Hide Bootstrap's default icon */
+        }
+        
+        .navbar-icon {
+            font-size: 1.5rem; /* Slightly bigger size */
+            color: #6c757d; /* Grey color */
+        }
 
         .section-offset::before {
             content: "";
@@ -106,9 +115,9 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <a class="navbar-brand" href="#">Jerry Tang</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars navbar-icon"></i>
+        </button>     
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
@@ -195,6 +204,23 @@
     <!-- jQuery and Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const navbarToggler = document.querySelector(".navbar-toggler");
+            const navbarIcon = navbarToggler.querySelector(".navbar-icon");
+    
+            navbarToggler.addEventListener("click", function () {
+                if (navbarIcon.classList.contains("fa-bars")) {
+                    navbarIcon.classList.remove("fa-bars");
+                    navbarIcon.classList.add("fa-chevron-up");
+                } else {
+                    navbarIcon.classList.remove("fa-chevron-up");
+                    navbarIcon.classList.add("fa-bars");
+                }
+            });
+        });
+    </script>
+    
 
 </body>
 
